@@ -9,6 +9,7 @@ This repository contains two main folders: prdocut and product-app
    - Uses MongoDB as the database.
    - Exposes RESTful APIs for the frontend to interact with.
    - Integrated with TestContainers for isolated testing.
+
 2. **`product-app` (React Frontend)**
    - A React-based web application for managing products.
    - Communicates with the Spring Boot microservice (`product`) via REST APIs.
@@ -27,6 +28,8 @@ Before running the application, ensure the following dependencies are installed:
 **Build with Maven:**
 ```sh
 cd product
+```
+```sh
 mvn clean package
 ```
 
@@ -62,7 +65,7 @@ Swagger UI is available at:
 
 - **Get product by ID**
     ```sh
-    curl -X GET http://localhost:8080/api/products/3432
+    curl -X GET http://localhost:8080/api/products/10012
     ```
 - **Add a product**
     ```sh
